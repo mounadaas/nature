@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    height: 60px;
+}
+.contiener{
+    padding: 20px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos img{
+    width: 60px;
+}
+.menu .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    transition: 0.3s;
+
+}
+.menu .icon span:first-child{
+    width: 100%;
+    background-color: black;
+   height: 2px;
+   margin-bottom: 3px;
+}
+.menu .icon span:nth-child(2){
+    width: 50%;
+    background-color: black;
+    height: 2px;
+    margin-bottom: 3px;
+}
+.menu .icon span:last-child{
+    width: 100px;
+    background-color: black;
+    height: 2px;
+    margin-bottom: 3px;
+}
+.menu .icon:hover span:nth-child(2){
+    width: 100%;
+}
+.menu{
+    position: relative;
+}
+ul{
+   display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    list-style: none;
+    width: 150px;
+    background-color: #F6F6F6; 
+}
+.menu:hover ul{
+    display: block;
+}
+ul::before{
+    content: "";
+    right: 10px;
+    top: -40px;
+    position: absolute;
+    border-bottom: 20px solid #F6F6F6;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+ul li{
+    padding: 15px;
+    border-bottom: 1px solid #afabab;
+    transition: 0.3s;
+}
+.menu ul li:hover{
+    padding-left :25px;
+}
+/*end section one*/
+/*start section two*/
+.home{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/landing.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vito{
+    text-align: center;  
+}
+.vito h1{
+color: #20CCBB;
+font-weight: bold;
+font-size: 35px;
+margin-bottom: 15px;
+}
+.vito p{
+    width:350px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #3E3D5D;
+}
+/*end section two*/
+/*start section three*/
+.services{
+background-color: #F6F6F6;
+display: flex;
+align-items: center;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.elemnt{
+    margin: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-top: 25px;
+    padding-bottom:25px ;
+}
+
+.axe h2{
+margin-bottom: 20px;
+margin-top: 20px;
+font-size: 16px;
+font-weight: bold;
+}
+.axe p{
+    margin: auto;
+    line-height: 1.8;
+    color: #778793;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.axe i{
+    color: #20CCBB;
+    font-size: 45px;
+}
+
+/*end section three*/
+/*start section four*/
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    padding-top: 20px;
+}
+.dot p{
+    color: #797979;
+    text-align: center;
+    margin-top: -30px;
+    font-size: 18px;
+}
+/*end section four*/
+/*start section five*/
+.work{
+    margin: auto;
+    display: grid;
+}
+.leg{
+    text-align: center;
+}
+.leg i{
+    color: #20CCBB;
+    font-size: 40px;
+}
+.work p{
+    color: #778793;
+    line-height: 1.8; 
+}
+.work h4{
+    font-weight: bold;
+}
+.workOne{   
+  padding: 40px 40px 0px 40px;
+}
+.workTwo{
+    display: grid;
+    align-items: center;
+    padding: 40px 40px 0px 40px;
+}
+.workThree{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+.workThree img{
+    width: 250px;
+    height: 350px; 
+    margin-top: 60px;
+
+}
+.mango{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.mango::after{
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 400px;
+    background-color: #2C4755;
+    right: 25px;
+    top: 74px;
+    z-index: -1;
+}
+/*end section five*/
+/*start section six*/
+.six{
+    background-color: #F6F6F6;
+}
+.ballon{
+    margin: auto;
+    padding: 15px;
+}
+.porojet{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    background-color: #FFFFFF;
+}
+.porojet p{
+    color: #778793;
+    line-height: 1.5; 
+    padding-bottom: 15px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.porojet h5{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.porojet img{
+width: 100%;
+height: 250px;
+}
+/*end section six*/
+/*start section seven*/
+.seven{
+    padding-bottom: 50px;
+}
+.photo1 img{
+    width: 250px;
+    height: 350px;
+}
+.photo2 h6{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.photo2 p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #778793;
+}
+.seven .space{
+    padding-bottom: 70px;
+}
+/*end section seven*/
+
+/*start section eight*/
+.contact{
+    background-color: #F6F6F6;
+    padding: 50px;
+    margin: auto;
+}
+.contact .email{
+    padding-top: 90px;
+}
+.para{
+    display: flex;
+    justify-content: center;
+}
+.para i{
+    padding-left: 10px;
+    color:#2C4755 ;
+}
+.email h2{
+    color: #2C4755;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: -3px;
+    padding-bottom: 20px;
+}
+.email h3{
+    color: #10CAB7;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 35px;
+    padding-bottom: 23px;
+}
+.email h2, .email h3{
+    text-align: center;
+}
+/*end section eight*/
+/* start footer */
+footer{
+    background-color: #2C4755;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+footer span{
+    color: #10CAB7;
+}
+/* end footer */
+/*------------------------------------------------
+-----------------------------------------------*/
+/*Mobile screen*/
+@media ( max-width: 767px){ 
+    .dot h1{
+        color: #EBECED;
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: -3px;
+    }
+    .leg i{
+        margin-bottom: 25px;
+    }
+    .work p{
+        text-align: center;
+    }
+    .work h4{
+        margin-bottom: 20px;
+    }
+    .workThree{
+        display: none;
+    }
+    .feat1:first-child{
+        padding-bottom: 40px;
+    }
+    .feat2{
+        padding-bottom: 40px;
+    }
+    .bassel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .photo2{
+        padding: 30px;
+        text-align: center;
+    }
+    .photo2 hr{
+        width: 70%;
+        height: 2px;
+        background-color: #20CCBB;
+        border: none;
+        margin: 50px auto 50px auto;
+    }
+}
+
+/*small screen*/
+@media ( min-width: 768px){
+    .contiener{
+        width: 750px;
+    }
+    .elemnt{
+        width: 750px; 
+    }
+    .work{
+        width: 750px; 
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    .bassel{
+        width: 750px; 
+    }
+    .work p{
+        text-align: center;
+    }
+    .work h4{
+        margin-bottom: 20px;
+    }
+    .dot h1{
+        color: #EBECED;
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: -3px;
+    }
+    .leg i{
+        margin-bottom: 25px;
+    }
+    .workThree{
+        display: none;
+    }
+    .feat1:last-child{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .feat2:last-child{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .ballon{
+        width: 750px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        justify-content: space-between;
+    }
+    .bassel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .photo2{
+        padding: 30px;
+        text-align: center;
+        margin: auto;
+    }
+    .photo2 hr{
+        width: 70%;
+        height: 2px;
+        background-color: #20CCBB;
+        border: none;
+        margin: 50px auto 50px auto;
+    }
+}
+
+
+/*Meduim screen*/
+@media ( min-width:992px){
+    .contiener{
+        width:  970px;
+    }
+    .elemnt{
+        width: 970px; 
+    }
+    .work{
+        width: 970px; 
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+    .bassel{
+        width: 970px;
+        position: relative;
+        margin: auto;
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(400px , 1fr));
+    }
+    .work p{
+        padding-left: 70px;
+        text-align: left;
+    }
+    .work h4{
+        padding-left: 30px;
+    }
+    .axe p{
+        width: 200px;
+    }
+    .dot h1{
+        color: #EBECED;
+        font-weight: bold;
+        font-size: 100px;
+        text-align: center;
+        letter-spacing: -3px;
+    }
+    .work .leg{
+        display: flex;
+    }
+    .workThree{
+        display: none;
+    }
+    .ballon{
+        width: 970px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        justify-content: space-between;
+    }
+    .photo1{
+        padding: 30px;
+    }
+    .photo1::after{
+        content: "";
+        width: 100px;
+        height: 270px;
+        border-bottom: 65px solid #20CCBB;
+        border-left: 83px solid #20CCBB;
+        z-index: -1;
+        position: absolute;
+        top: 5px;
+        left: 230px;
+    }
+    .photo1::before{
+        content: "";
+        width: 100px;
+        height: 400px;
+        background-color: #EBECED;
+        z-index: -1;
+        position: absolute;
+        bottom: 45px;
+        left: -5px;
+    }
+    .photo2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+
+/*large screen*/
+@media ( min-width: 1200px){
+    .contiener{
+        width:1170px;
+    }
+    .elemnt{
+        width: 1170px; 
+    }
+    .work{
+        width: 1170px; 
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .bassel{
+        width: 1170px; 
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        position: relative;
+        padding-top: 50px;
+        margin: auto;
+        display: grid; 
+    }
+    .work p{
+        padding-left: 70px;
+    }
+    .work h4{
+        padding-left: 30px;
+    }
+    .axe p{
+        width: 200px;
+    }
+    .dot h1{
+        color: #EBECED;
+        font-weight: bold;
+        font-size: 100px;
+        text-align: center;
+        letter-spacing: -3px;
+    }
+    .work .leg{
+        display: flex;
+    }
+    .workThree{
+        display: block;
+    }
+    .ballon{
+        width: 1170px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .photo1::after{
+        content: "";
+        width: 100px;
+        height: 270px;
+        border-bottom: 65px solid #20CCBB;
+        border-left: 83px solid #20CCBB;
+        z-index: -1;
+        position: absolute;
+        top: 50px;
+        left: 230px;
+    }
+    .photo1::before{
+        content: "";
+        width: 100px;
+        height: 400px;
+        background-color: #EBECED;
+        z-index: -1;
+        position: absolute;
+        bottom: 15px;
+        left: -5px;
+    }
+    .photo2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
